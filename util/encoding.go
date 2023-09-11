@@ -97,7 +97,7 @@ func IsPort(src int) bool {
 func DecodeAddress(src string) (Address, error) {
 	var result Address
 	dst, err := DecodeString(src)
-	if err != nil {
+	if err != nil { 
 		return result, err
 	}
 	if len(dst) != len(result) {
